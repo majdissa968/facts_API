@@ -1,0 +1,23 @@
+{
+  "name": "facts_api",
+  "version": "1.0.0",
+  "description": "Facts API",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./start.js"
+  },
+  "author": "majd",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12",
+    "pug": "^2.0.3",
+    "uuid": "^3.2.1",
+    "validator": "^9.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2"
+  }
+}

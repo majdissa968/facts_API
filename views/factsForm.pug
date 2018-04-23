@@ -1,0 +1,28 @@
+h2= title
+
+form(action='' method='POST')
+      label(for='band') Band
+      br
+      input(type='text'
+            name='artist'
+            id='artist'
+            value=(fact.artist || '')
+            )
+      br
+      label(for='album-title') Album Title
+      br
+      input(type='text'
+            name='album'
+            id='album'
+            value=(fact.album || '')
+            )
+      br
+      label(for='title') Album Description
+      br
+      textarea(type='text'
+            name='text'
+            id='text'
+            rows='10'
+            )=(fact.text || '')
+      br
+      input(type='submit' value='Submit')
