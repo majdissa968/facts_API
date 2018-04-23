@@ -29,7 +29,7 @@ exports.getFactById = async (req, res) => {
 
 exports.factsForm = (req, res) => {
 	res.render('factsForm', {
-		title: 'Add an Album',
+		title: 'Add Album',
 		fact: {}
 	});
 };
@@ -51,7 +51,7 @@ exports.editFact = async (req, res) => {
 
 exports.updateFact = async (req, res) => {
 	const body = req.body;
-	body.updated_at = new Date();
+	body.updated = new Date();
 
 	const fact = await Facts.findOneAndUpdate({ _id: req.params.id }, body, {
 		new: true

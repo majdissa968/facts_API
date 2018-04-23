@@ -1,28 +1,28 @@
 h2= title
 
-form(action='' method='POST')
-      label(for='band') Band
-      br
+form(action='/' method='POST')
+      label(for='music') Music
+      hr
       input(type='text'
             name='artist'
             id='artist'
-            value=(fact.artist || '')
+            value=(fact.music || '')
             )
-      br
-      label(for='album-title') Album Title
-      br
+      hr
+      label(for='album') Album
+      hr
       input(type='text'
             name='album'
             id='album'
             value=(fact.album || '')
             )
-      br
-      label(for='title') Album Description
-      br
+      hr
+      label(for='title') Description
+      hr
       textarea(type='text'
             name='text'
             id='text'
             rows='10'
             )=(fact.text || '')
-      br
+      hr
       input(type='submit' value='Submit')
